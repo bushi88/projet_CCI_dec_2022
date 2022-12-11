@@ -1,3 +1,13 @@
+/* bootstrap 5.2.3 */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+/* owlcarousel */
+@import url("../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css");
+@import url("../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css");
+
+/* fonts */
+
 @font-face {
     font-family: "japon";
     src: url("../fonts/japon/Japon.ttf");
@@ -6,6 +16,12 @@
 @font-face {
     font-family: "quicksand";
     src: url("../fonts/quicksand/Quicksand_Book.otf");
+}
+
+:root {
+    --white_bg: #f5f5dc;
+    --black_txt: #111;
+    --red_hover: #d81414;
 }
 
 ul,
@@ -103,7 +119,7 @@ section h3 {
     margin: 3% auto;
 }
 
-/*** HEADER ***/
+/********** HEADER **********/
 
 .topMenu li {
     padding: 0.2%;
@@ -166,6 +182,10 @@ h1 span:nth-child(1) {
 .flag a img:hover {
     transform: scale(1.2);
     transition: 0.5s all;
+}
+
+.wrap-search {
+    width: 60%;
 }
 
 /***** navbar *****/
@@ -263,8 +283,11 @@ button:focus:not(:focus-visible) {
     box-shadow: none;
 }
 
+nav {
+    border-bottom: 3px solid #d81414;
+}
 
-/***** bordures svg (navbar + footer) *****/
+/***** bordures svg (footer) *****/
 
 .borderSvgBottom,
 .borderSvgTop {
@@ -327,19 +350,19 @@ button:focus:not(:focus-visible) {
 }
 
 .sous-menu ul li a:hover {
-    background-color: rgb(216, 20, 20);
+    border-bottom: 2px solid #d81414;
     color: #f5f5dc;
     text-shadow: -2px 2px 2px #111;
-    transition: 1s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
 
 .main-nav li:hover .menu-panneau {
     display: block;
-    transition: 1s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
 
 
-/*** MAIN ***/
+/********** MAIN **********/
 
 /*** carousel pub ***/
 
@@ -399,53 +422,110 @@ button:focus:not(:focus-visible) {
 
 /*** offres - promotions ***/
 
+.promotion {
+    position: relative;
+}
+
 .promotion img {
     box-shadow: 10px 10px 10px #111;
     border-radius: 8px;
 }
 
+.promotion img:hover {
+    opacity: 0.6;
+}
+
+.wrap-button {
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .btn-offre {
+    background-color: #f5f5dc;
     color: #111;
+    outline: 1px solid #d81414;
     border-radius: 8px;
     transition: 0.6s all;
-    padding: 0 8%;
+    padding: 0 10%;
 }
 
 .btn-offre:hover {
     background-color: #f5f5dc;
     color: #d81414;
-    outline: 1px solid #111;
+}
+
+/*** animations promo ***/
+
+.animationPromo1 {
+    animation-name: promo1;
+    animation-duration: 2s;
+    position: relative;
+}
+
+@keyframes promo1 {
+    0% {
+        left: -1000px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.animationPromo2 {
+    animation-name: promo2;
+    animation-duration: 2s;
+    position: relative;
+}
+
+@keyframes promo2 {
+    0% {
+        bottom: -100px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+.animationPromo3 {
+    animation-name: promo3;
+    animation-duration: 2s;
+    position: relative;
+}
+
+@keyframes promo3 {
+    0% {
+        left: 1000px;
+    }
+
+    100% {
+        left: 0px;
+    }
 }
 
 /* section top produit + animation rotateY(180deg) */
 
+/********************************/
+/********************************/
+/********************************/
+/* voir pour flex + perspective */
+/********************************/
+/********************************/
+/********************************/
+/********************************/
+
+
+
+
 .card-produit {
+    box-shadow: 10px 10px 10px #111;
     outline: 1px solid #111;
     border-radius: 8px;
-    box-shadow: 10px 10px 10px #111;
-    margin-bottom: 10%;
-}
-
-/* fiche produit */
-
-.more {
-    display: block;
-    width: 60%;
-    margin: 0 auto;
-    background-color: #111;
-    color: #f5f5dc;
-    border-radius: 8px;
-    padding: 1%;
-    margin-top: 5%;
-}
-
-.description {
-    width: 60%;
-    margin: 2% 20% 5% 20%;
-}
-
-.description .more:hover {
-    background-color: #d81414;
 }
 
 .card-produit h4 span {
@@ -482,8 +562,28 @@ button:focus:not(:focus-visible) {
     text-align: center;
 }
 
+.more {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #111;
+    color: #f5f5dc;
+    border-radius: 8px;
+    padding: 1%;
+    margin-top: 5%;
+}
+
+.description {
+    width: 60%;
+    margin: 2% 20% 5% 20%;
+}
+
+.description .more:hover {
+    background-color: #d81414;
+}
+
 .product-btn {
-    background-color: #c72f2f;
+    background-color: #d81414;
     color: #f5f5dc;
     border-radius: 50px;
     font-size: 0.8rem;
@@ -543,10 +643,11 @@ button:focus:not(:focus-visible) {
     padding: 0 auto;
 }
 
-/*** FOOTER ***/
+/********** FOOTER **********/
 
 footer {
     position: relative;
+    border-top: 1px solid #111;
 }
 
 footer section {
@@ -574,52 +675,130 @@ footer section {
     font-size: 0.6rem;
 }
 
-/*** animations promo ***/
+/**********************************/
+/********* PAGE PRODUIT ***********/
+/*********************************/
 
-.animationPromo1 {
-    animation-name: promo1;
-    animation-duration: 2s;
+.product-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 20px 20px 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #111;
+    box-shadow: 5px 5px 10px #111;
     position: relative;
 }
 
-@keyframes promo1 {
-    0% {
-        left: -1000px;
-    }
+.product-wrapper .zap-btn {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+}
 
-    100% {
-        left: 0px;
+.product-wrapper .zap-btn:hover {
+    color: #d81414;
+    background-color: #f1f1f1;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    max-width: 300px;
+    overflow-x: hidden;
+}
+
+.image-container,
+.image-container img {
+    width: 200px;
+    height: 230px;
+}
+
+.image-container img {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper .image-container {
+        overflow-x: scroll;
     }
 }
 
-.animationPromo2 {
-    animation-name: promo2;
-    animation-duration: 2s;
-    position: relative;
+.nav-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 24px;
 }
 
-@keyframes promo2 {
-    0% {
-        bottom: -100px;
-    }
-
-    100% {
-        bottom: 0px;
-    }
+.nav-btns .nav-btn {
+    width: 24px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #f5f5dc;
 }
 
-.animationPromo3 {
-    animation-name: promo3;
-    animation-duration: 2s;
-    position: relative;
+.nav-btns .nav-btn.active {
+    background-color: #d81414;
 }
 
-@keyframes promo3 {
-    0% {
-        left: 1000px;
-    }
+.finalize h4 {
+    font-family: quicksand, sans-serif;
+    text-transform: none;
+    font-size: 1rem;
+}
 
-    100% {
-        left: 0px;
-    }
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #F3F3F3;
+    background-color: #fff;
+    border-bottom: 4px solid #d81414;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px #111;
+    outline: 1px solid #111;
+}
+
+.txt_price {
+    margin-top: 2%;
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.old-price {
+    font-size: 2.3rem;
+    color: #111;
+}
+
+.price {
+    font-size: 2.2rem;
+    color: #111;
+    font-weight: bolder;
+}
+
+.total-amount {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.similar_product_item span {
+    display: inline-block;
+    padding: 8px;
+}
+
+.similar_product_item span:first-child {
+    font-weight: bold;
 }
