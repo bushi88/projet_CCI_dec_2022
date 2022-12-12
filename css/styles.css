@@ -121,6 +121,18 @@ section h3 {
 
 /********** HEADER **********/
 
+.topMenu {
+    margin-bottom: 0;
+}
+
+.header-line {
+    border: 1px solid #d81414;
+    border-radius: 50%;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
 .topMenu li {
     padding: 0.2%;
 }
@@ -219,8 +231,17 @@ h1 span:nth-child(1) {
     background: #d81414;
 }
 
-.search:hover {
+.search,
+.btn-outline-dark {
+    background-color: white;
     border: 1px solid #111;
+}
+
+.search:hover,
+.btn-outline-dark:hover {
+    background-color: white;
+    opacity: 0.8;
+    transition: 0.5s all;
 }
 
 /* menu burger svg avec animation */
@@ -284,28 +305,9 @@ button:focus:not(:focus-visible) {
 }
 
 nav {
-    border-bottom: 3px solid #d81414;
+    border-bottom: 2px solid #d81414;
 }
 
-/***** bordures svg (footer) *****/
-
-.borderSvgBottom,
-.borderSvgTop {
-    display: block;
-    position: relative;
-    height: 50px;
-}
-
-.borderSvgTop {
-    transform: rotateX(180deg);
-    top: 10px;
-}
-
-.borderSvg1 {
-    position: absolute;
-    top: -5px;
-    z-index: 5;
-}
 
 /***** panneaux  / sous-menus *****/
 
