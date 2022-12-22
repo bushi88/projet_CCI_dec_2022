@@ -29,11 +29,10 @@
                 <div class="reseaux mt-4">
                     <a href="#footer" target="_blank"><img src="./img/reseaux/facebook.png" alt="facebook" width="30"></a>
                     <a href="#footer"><img src="./img/reseaux/youtube.png" alt="youtube" width="30"></a>
+                    <a href="#footer"><img src="./img/reseaux/twitter.png" alt="twitter" width="30"></a>
                     <a href="#footer"><img src="./img/reseaux/instagram.png" alt="instagram" width="30"></a>
-                    <a href="#footer"><img src="./img/reseaux/tiktok.png" alt="tiktok" width="30"></a>
-                    <a href="#footer"><img src="./img/reseaux/pinterest.png" alt="pinterest" width="30"></a>
+                    <a href="#footer"><img src="./img/reseaux/snapchat.png" alt="snapchat" width="30"></a>
                     <a href="#footer"><img src="./img/reseaux/linkedin.png" alt="linkedin" width="30"></a>
-
                 </div>
             </div>
             <div class="col-xs-12 col-md-4 text-center">
@@ -68,11 +67,11 @@
         </div>
         <hr>
         <div class="text-center mt-1">
-            <div class="row wrap-search m-auto">
+            <div class="row wrap-search m-auto w-xl-25 w-md-50 w-xs-100">
                 <div class="col-12">
                     <p><strong>INSCRIVEZ-VOUS A NOTRE NEWSLETTER !</strong></p>
                 </div>
-                <div class="col-12 input-group mb-5 m-auto w-75">
+                <div class="col-12 input-group mb-5 m-auto">
                     <input type="text" class="form-control search" placeholder="entrez votre email" aria-label="rechercher" aria-describedby="button-addon2" name="search">
                     <button class="btn btn-outline-dark" type="submit" value="submit" id="button-addon2">
                         <img src="./img/icones/send_blk.png" alt="search" width="30">
@@ -102,6 +101,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/poppers/dist/poppers.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+<!-- <script src="./node_modules/tiny-slider/dist/tiny-slider.js"></script> -->
+
 <script src="./OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
 <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 

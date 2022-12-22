@@ -12,12 +12,13 @@
 <body>
 
     <!-- header -->
-    <?php require('./inc_header.php') ?>
-    <?php require('./inc_article_search.php') ?>
+    <?php require_once('./inc_header.php') ?>
+    <?php require_once('./inc_article_search.php') ?>
 
     <main id="main" class="container text-center">
 
         <!-- carousel publicitaire -->
+
         <section id="carouselPerso" class="publicite d-none d-md-block col-md-12">
             <div class="wrapper">
                 <div id="containerPerso"></div>
@@ -27,6 +28,20 @@
         </section>
 
         <!-- offres du moment -->
+        <div class="compte-a-rebours">
+            <div class="mt-5 d-flex justify-content-center align-items-center">
+                <img src="./img\icones\flash-sale.png" alt="flash sale" width="60px" class="flash_img1">
+                <p class="flash_title">
+                    <span>Dépêchez vous !</span>
+                    <span>il ne vous reste plus que</span>
+                </p>
+                <img src="./img\icones\flash-sale.png" alt="flash sale" width="60px" class="flash_img2">
+            </div>
+            <div id="flash">
+                <div id="compteur" class="rebours"></div>
+            </div>
+        </div>
+
         <section class="moment">
             <h3>NOS OFFRES DU MOMENT</h3>
             <div class="row" id="promo">
@@ -274,121 +289,97 @@
                     <h4>Taekwondo</h4>
                     <img src="./img/sport/taekwondo.jpg" alt="taekwondo">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+                        
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/Taekwondo" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
                     <h4>kickboxing</h4>
                     <img src="./img/sport/kickboxing.jpg" alt="kickboxing">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+                       
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/kickboxing" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
                     <h4>Karate</h4>
                     <img src="./img/sport/karate.jpg" alt="karate">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+                  
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/Karate" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
                     <h4>MMA</h4>
                     <img src="./img/sport/mma.jpg" alt="mma">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+           
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/Arts_martiaux_mixtes" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
                     <h4>Judo</h4>
                     <img src="./img/sport/judo.jpeg" alt="judo">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+                     
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/Judo" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
                     <h4>Aikido</h4>
                     <img src="./img/sport/aikido.jpg" alt="aikido">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+                
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/aikido" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
                     <h4>viet vo dao</h4>
                     <img src="./img/sport/viet_vo_dao.jpg" alt="Việt Võ Đạo">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+             
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/Vovinam_Vi%E1%BB%87t_V%C3%B5_%C4%90%E1%BA%A1o" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
                     <h4>Kung Fu</h4>
                     <img src="./img/sport/kung_fu.jpg" alt="kung fu">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+                   
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/kung-fu" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
                     <h4>Tai Chi</h4>
                     <img src="./img/sport/tai_chi.jpg" alt="tai chi">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+                
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/tai-chi" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
                     <h4>Yoga</h4>
                     <img src="./img/sport/yoga.jpg" alt="Yoga">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+              
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/Yoga" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
                     <h4>Krav maga</h4>
                     <img src="./img/sport/krav_maga.jpg" alt="Krav maga">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+            
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/krav-maga" target="_blank">voir plus</a>
                 </div>
                 <div class="item sport">
-                    <h4>Penchak Silat</h4>
+                    <h4>Pencak Silat</h4>
                     <img src="./img/sport/Penchak_Silat.jpg" alt="Penchak Silat">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente
-                        veritatis? Id dicta mollitia architecto dolore error fugit sapiente ullam ipsam
-                        voluptas ad quaerat, nihil ex quisquam cupiditate, illo laborum.
+              
                     </p>
-                    <a href="#">voir plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/Pencak-Silat" target="_blank">voir plus</a>
                 </div>
             </div>
             <div class="owl-controls clickable"></div>
@@ -435,7 +426,7 @@
     </main>
 
     <!-- Footer -->
-    <?php require('./inc_footer.php') ?>
+    <?php require_once('./inc_footer.php') ?>
 
 </body>
 

@@ -1,19 +1,20 @@
 <header id="header" class="jumbotron-fluid text-center">
     <div class="bgc_Black">
+
         <ul class="topMenu row">
             <li class="d-none d-md-block col-md-2"><a href="#">Notre boutique</a></li>
             <li class="d-none d-md-block col-md-2"><a href="#">Nos partenaires</a></li>
             <li class="col-12 col-md-4"><a href="#" title="livraison offerte dès 30€ d'achat"><span class="freeShip">LIVRAISON & RETOUR GRATUITS*</span> </a></li>
-            <li class="d-none d-sm-block col-md-2"><span class="contact"><img src="./img/icones/email_wth.png" alt="email" width="14"> contact@bushi.com</span></li>
-            <li class="d-none d-sm-block col-md-2"><span class="contact"><img src="./img/icones/call_wth.png" alt="phone" width="14"> +33(0)666 666 666</span></li>
+            <li class="d-none d-md-block col-md-2"><span class="contact"><img src="./img/icones/email_wth.png" alt="email" width="14"> contact@bushi.com</span></li>
+            <li class="d-none d-md-block col-md-2"><span class="contact"><img src="./img/icones/call_wth.png" alt="phone" width="14"> +33(0)666 666 666</span></li>
         </ul>
 
         <div class="header-line"></div>
 
         <nav class="navbar navbar-expand-md navbar-dark bgc_Black sticky-top">
             <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#openNav" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
-                <!-- burger au format svg -->
+            <!-- button burger animé au format svg -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#openNav" onclick="this.classList.toggle('opened')">
                 <svg width="40" height="40" viewBox="0 0 100 100">
                     <path id="part1" class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                     <path id="part2" class="line line2" d="M 20,50 H 80" />
@@ -272,10 +273,14 @@
                                 </button>
                                 <ul class="dropdown-menu user_menu" aria-labelledby="dropdownAccount">
                                     <li>
-                                        <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#newLogin">Nouveau client ? Créez un compte</button>
+                                        <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#newLogin">
+                                            Nouveau client ? Créez un compte
+                                        </a>
                                     </li>
                                     <li>
-                                        <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#oldLogin">Se connecter</button>
+                                        <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#oldLogin">
+                                            Se connecter
+                                        </a>
                                     </li>
                                     <li><a class="dropdown-item" href="#">Aperçu de mon compte</a></li>
                                     <li><a class="dropdown-item" href="#">Suivi de commande</a></li>
@@ -330,6 +335,6 @@
         </div>
     </div>
 
-    <?php require('inc_modal.php') ?>
+    <?php require_once('inc_modal.php') ?>
 
 </header>

@@ -12,8 +12,8 @@
 <body>
 
     <!-- header -->
-    <?php require('./inc_header.php') ?>
-    <?php require('./inc_article_search.php') ?>
+    <?php require_once('./inc_header.php') ?>
+    <?php require_once('./inc_article_search.php') ?>
 
     <!-- main -->
     <main>
@@ -251,7 +251,7 @@
     </main>
 
     <!-- Footer -->
-    <?php require('./inc_footer.php') ?>
+    <?php require_once('./inc_footer.php') ?>
 
 </body>
 
